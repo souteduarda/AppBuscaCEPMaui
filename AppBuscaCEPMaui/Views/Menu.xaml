@@ -2,18 +2,32 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppBuscaCEPMaui.Views.Menu"
-             Title="Menu">
+             Title="Menu"
+             BackgroundColor="#363636">
 
     <VerticalStackLayout>
 
         <Grid ColumnDefinitions="*, *"
-              RowDefinitions="*, *, *, *">
+              RowDefinitions="*, *, *, *"
+              ColumnSpacing="10" RowSpacing="10"
+              Padding="10"
+              VerticalOptions="CenterAndExpand">
 
-            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Api Busca Cep"/>
-            <Button Grid.Row="1" Grid.Column="0" Text="Buscar CEP" Clicked="Button_Clicked"/>
-            <Button Grid.Row="1" Grid.Column="1" Text="Buscar Cidade"/>
-            <Button Grid.Row="2" Grid.Column="0" Text="Buscar Ruas de Bairro"/>
-            <Button Grid.Row="2" Grid.Column="1" Text="Busca Endereço Pelo CEP" Clicked="Button_Clicked_1"/>
+            <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   Text="Api Busca Cep" TextColor="White"
+                   FontSize="Title"/>
+            
+            <Button Grid.Row="1" Grid.Column="0"
+                    Text="Buscar CEP" Clicked="Button_Clicked" TextColor="White" BackgroundColor="#6495ED" />
+            
+            <Button Grid.Row="1" Grid.Column="1"
+                    Text="Buscar Cidade" Clicked="Button_Clicked_2" TextColor="White" BackgroundColor="#6495ED"/>
+            
+            <Button Grid.Row="2" Grid.Column="0" 
+                    Text="Buscar Ruas de Bairro" Clicked="Button_Clicked_3" TextColor="White" BackgroundColor="#6495ED"/>
+            
+            <Button Grid.Row="2" Grid.Column="1"
+                    Text="Busca Endereço Pelo CEP" Clicked="Button_Clicked_1" TextColor="White" BackgroundColor="#6495ED"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
